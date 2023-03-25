@@ -50,5 +50,5 @@ Pour démarrer l'application, il faut lancer la commande suivante :
     node app.js
 ```
 
-![Page accueil](https://github.com/eteka75/node-app-mysql-todo-list/tree/main/public/TodoApp1.png?raw=true)
-![Page A propos](https://github.com/eteka75/node-app-mysql-todo-list/tree/main/public/TodoApp2.png?raw=true)
+![Page accueil](https://github.com/eteka75/node-app-mysql-todo-list/blob/main/public/TodoApp1.png?raw=true)
+![Page A propos](https://github.com/eteka75/node-app-mysql-todo-list/blob/main/public/TodoApp2.png?raw=true)
