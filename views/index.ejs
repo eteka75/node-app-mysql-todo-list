@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+</head>
+
+<body>
+    <div style="width: 50%; margin:auto">
+        <%- include('components/nav.ejs')%>
+            <section>
+
+                <h1>
+                    <%=heureConnecte%>
+                </h1>
+                <form method="POST" action="/notes">
+                    <label for="titre">Titre</label><br>
+                    <input type="hidden" name="id" id="id"><br>
+                    <input type="text" name="titre" id="titre"><br>
+                    <label for="description">Description</label><br>
+                    <textarea name="description" id="description" cols="20" rows="5"></textarea>
+                    <br>
+                    <input type="submit" value="Enregistrer">
+                </form>
+                <p>--------------------------------------------------</p>
+            </section>
+            <section>
+                <h1>Liste des tâches</h1>
+
+                <% for(i=0;i<notes.length;i++){ %>
+
+                    <h3>
+                        <%=notes[i].titre%>
+                    </h3>
+                    <div>
+                        <%=notes[i].description%>
+                            <input type="button" value="Modifier"
+                                onclick="remplirData('<%=notes[i].id%>','<%=notes[i].titre%>','<%=notes[i].description%>')" />
+                            <input type="button" value="Supprimer" onclick="Supprimer('<%=notes[i].id%>')" />
+                    </div>
+                    <hr>
+                    <% } %>
+                        </ul>
+            </section>
+            <script>
+                function remplirData(id, titre, desc) {
+
+                    document.getElementById('id').value = id;
+                    document.getElementById('titre').value = titre;
+                    document.getElementById('description').value = desc;
+                }
+
+                function Supprimer(id) {
+                    let pointFinal = "notes/" + id;
+                    // alert(id);
+                    fetch(pointFinal, { method: 'DELETE' }).then((response) => response.json()).
+                        then(data => {
+                            document.location.href = data.routeRacine
+                        }).catch(error => { alert(error); })
+                }
+            </script>
+    </div>
+</body>
+
+</html>
