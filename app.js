@@ -4,6 +4,7 @@ const mysql = require("mysql");
 const myConnexion = require("express-myconnection");
 const morgan = require("morgan");
 const optionDb = require("./config");
+const system = require("os");
 
 const router = require("./routes/todoRoutes");
 
@@ -13,7 +14,8 @@ app.use(myConnexion(mysql, optionDb, "pool"));
 //Ajout du moteur de template
 app.set("view engine", "ejs");
 app.set("views", "views"); //affectation dossier des vues
-
+//Info Système
+console.log(system.userInfo(), system.version());
 app.use("/", express.static(__dirname + "/public")); //rendre static le dossier des ressources
 //Les Middlewares
 app.use(express.urlencoded({ extended: false })); //gestion de l'encodage des données du formulaire
