@@ -3,14 +3,15 @@ Cette application est réalisée à titre d'exercice afin de realiser une révis
 NODE.js pour communiquer avec une base de donées MySQL en utilisation Express.
 Il s'agit d'un CRUD portant sur des Tâches, suivi de leur description dans une table nommée "notes".
 
-* CRUD désigne les quatre opérations de base pour la persistance des données, en particulier le stockage d'informations en base de données. *
-Soit : 
-- Create : créer 
-- Read : lire 
-- Update : mettre à jour 
-- Delete : supprimer.
+> **CRUD** désigne les quatre (04) opérations de base pour **la persistance** des données, en particulier le **stockage** d'informations en base de données. 
+* Soit : 
+- **C**reate : créer 
+- **R**ead : lire 
+- **U**pdate : mettre à jour 
+- **D**elete : supprimer.
 ### Module Node
-Modules prod:
+
+Modules production:
 - ejs
 - express
 - express-myconnection
@@ -25,6 +26,7 @@ Modules dev :
 
 ### Structure de la table
 Stutre de la base de données :
+`notes.sql`
 ```bash
     notes  : table
         - id : integer (10, unsigned, Auto incrémente)
@@ -34,7 +36,7 @@ Stutre de la base de données :
 ### Paramètres DB
 
 Les paramètres de ma basse de données sont dans le fichier config.js :
-
+`config.js`
 ```bash
     host: "localhost",
     user: "root",
@@ -43,7 +45,7 @@ Les paramètres de ma basse de données sont dans le fichier config.js :
     database: "node_db",
 ```
 ### Paramètre de port d'écoute pour Node
-
+`app.js`
 Le port utilisé est "3001". L'application est donc accessible au lancement sur le lien : [http://localhost:3001](http://localhost:3001).
 Vous pouvez modifier le post et l'adapter à vos besoins (3000 par exemple).
 
