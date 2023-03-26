@@ -3,7 +3,12 @@ Cette application est réalisée à titre d'exercice afin de realiser une révis
 NODE.js pour communiquer avec une base de donées MySQL en utilisation Express.
 Il s'agit d'un CRUD portant sur des Tâches, suivi de leur description dans une table nommée "notes".
 
-- CRUD désigne les quatre opérations de base pour la persistance des données, en particulier le stockage d'informations en base de données. Soit : create : créer read : lire update : mettre à jour delete : supprimer.
+* CRUD désigne les quatre opérations de base pour la persistance des données, en particulier le stockage d'informations en base de données. *
+Soit : 
+- Create : créer 
+- Read : lire 
+- Update : mettre à jour 
+- Delete : supprimer.
 ### Module Node
 Modules prod:
 - ejs
