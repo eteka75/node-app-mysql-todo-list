@@ -49,6 +49,10 @@ Pour démarrer l'application, il faut lancer la commande suivante :
 ```bash
     node app.js
 ```
+ou en hot reload (charement à chaud) en utilisant la commande : 
+```bash
+    nodemon app.js 
+```
 
 ![Page accueil](https://github.com/eteka75/node-app-mysql-todo-list/blob/main/public/TodoApp1.png?raw=true)
 
