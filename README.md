@@ -21,10 +21,10 @@ Modules dev :
 ### Structure de la table
 Stutre de la base de données :
 ```bash
-    notes
-        id
-        titre
-        description
+    notes  : table
+        - id : integer (10, unsigned, Auto incrémente)
+        - titre : varchar(250)
+        - description : text(null) 
 ```
 ### Paramètres DB
 
