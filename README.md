@@ -4,7 +4,7 @@ NODE.js pour communiquer avec une base de donées MySQL en utilisation Express.
 Il s'agit d'un CRUD portant sur des Tâches, suivi de leur description dans une table nommée "notes".
 
 > **CRUD** désigne les quatre (04) opérations de base pour **la persistance** des données, en particulier le **stockage** d'informations en base de données. 
-* Soit : 
+Soit : 
 - **C**reate : créer 
 - **R**ead : lire 
 - **U**pdate : mettre à jour 
