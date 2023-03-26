@@ -26,7 +26,7 @@ Stutre de la base de données :
         titre
         description
 ```
-# Paramètres DB
+### Paramètres DB
 
 Les paramètres de ma basse de données sont dans le fichier config.js :
 
@@ -51,4 +51,5 @@ Pour démarrer l'application, il faut lancer la commande suivante :
 ```
 
 ![Page accueil](https://github.com/eteka75/node-app-mysql-todo-list/blob/main/public/TodoApp1.png?raw=true)
+
 ![Page A propos](https://github.com/eteka75/node-app-mysql-todo-list/blob/main/public/TodoApp2.png?raw=true)
